@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+        <p class="count">0 items left</p>
+      </header>
+
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="What needs to be done?"
+          autocomplete="off"
+        />
+        <button type="submit" aria-label="Add todo">Add</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list">
+        <!-- <li class="todo-item" data-id="1784390487585">
+          <input type="checkbox" class="todo-checkbox" /><span class="todo-text"
+            >r</span
+          >
+          <div class="todo-actions">
+            <button class="todo-btn edit" aria-label="Edit">✎</button
+            ><button class="todo-btn delete" aria-label="Delete">×</button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
