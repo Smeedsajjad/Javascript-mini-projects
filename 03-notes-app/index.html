@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Stack</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- =======================
+      CREATE NOTE MODAL
+======================= -->
+
+    <div class="note-modal">
+      <form class="form-box">
+        <h2>New Call</h2>
+
+        <label>Image URL</label>
+        <input
+          id="imageUrl"
+          required
+          type="url"
+          placeholder="https://example.com/photo.jpg"
+        />
+
+        <label>Full Name</label>
+        <input
+          id="fullName"
+          required
+          type="text"
+          placeholder="Enter full name"
+        />
+
+        <label>Home Town</label>
+        <input
+          id="homeTown"
+          required
+          type="text"
+          placeholder="Enter home town"
+        />
+
+        <label>Purpose</label>
+        <input
+          id="purpose"
+          required
+          type="text"
+          placeholder="Quick appointment note"
+        />
+
+        <!-- <label>Category</label>
+
+        <div class="categories">
+
+            <label>
+                <input type="checkbox">
+                Emergency
+            </label>
+
+            <label class="orange">
+                <input type="checkbox">
+                Important
+            </label>
+
+            <label class="purple">
+                <input type="checkbox">
+                Urgent
+            </label>
+
+            <label>
+                <input type="checkbox">
+                No Rush
+            </label>
+
+        </div> -->
+
+        <button type="submit">Create Note</button>
+        <button type="button" class="close">Close</button>
+      </form>
+    </div>
+
+    <!-- =======================
+        NOTE STACK
+======================= -->
+
+    <div class="notes-wrapper">
+      <div class="controls">
+        <button id="add-note-btn">+</button>
+        <button><i class="fa-solid fa-arrow-up"></i></button>
+        <button><i class="fa-solid fa-arrow-down"></i></button>
+      </div>
+
+      <div class="stack">
+        <!-- <div class="card">
+          <img src="https://i.pravatar.cc/100" alt="" />
+
+          <h2>Fatima Uma</h2>
+
+          <div class="row">
+            <span>Home town</span>
+            <span>Singapore</span>
+          </div>
+
+          <div class="row">
+            <span>Purpose</span>
+            <span>3 times</span>
+          </div>
+
+        </div> -->
+      </div>
+
+      <div class="colors">
+        <span class="black"></span>
+        <span class="purple"></span>
+        <span class="orange"></span>
+        <span class="green"></span>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
