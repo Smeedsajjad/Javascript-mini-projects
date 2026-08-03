@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+
+      <div class="search-box">
+        <input
+          type="text"
+          list="cities"
+          placeholder="Search city..."
+          id="city"
+        />
+
+        <datalist id="cities">
+          <option value="Jaranwala"></option>
+          <option value="New York"></option>
+          <option value="London"></option>
+          <option value="Paris"></option>
+          <option value="Tokyo"></option>
+          <option value="Dubai"></option>
+          <option value="Singapore"></option>
+          <option value="Sydney"></option>
+          <option value="Los Angeles"></option>
+          <option value="Toronto"></option>
+          <option value="Berlin"></option>
+          <option value="Rome"></option>
+          <option value="Madrid"></option>
+          <option value="Istanbul"></option>
+          <option value="Moscow"></option>
+          <option value="Beijing"></option>
+          <option value="Shanghai"></option>
+          <option value="Seoul"></option>
+          <option value="Bangkok"></option>
+          <option value="Delhi"></option>
+          <option value="Mumbai"></option>
+          <option value="Karachi"></option>
+          <option value="Lahore"></option>
+          <option value="Islamabad"></option>
+          <option value="Faisalabad"></option>
+          <option value="Cairo"></option>
+          <option value="Johannesburg"></option>
+          <option value="Mexico City"></option>
+          <option value="São Paulo"></option>
+          <option value="Buenos Aires"></option>
+        </datalist>
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="weather-card">
+        <h2 id="cityName">New York</h2>
+
+        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="icon" />
+
+        <h1 id="temp">0°C</h1>
+
+        <p id="condition">Unknown</p>
+
+        <div class="details">
+          <div>
+            <i class="fa-solid fa-droplet"></i>
+            <p>Humidity</p>
+            <span id="humidity">75%</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-wind"></i>
+            <p>Wind</p>
+            <span id="wind">15 km/h</span>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-temperature-half"></i>
+            <p>Feels Like</p>
+            <span id="feels">30°C</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="forecast-title">7-Day Forecast</h2>
+
+      <div class="forecast">
+        <div class="day">
+          <p>Mon</p>
+          <i class="fa-solid fa-sun"></i>
+          <h3>30°</h3>
+        </div>
+
+        <div class="day">
+          <p>Tue</p>
+          <i class="fa-solid fa-cloud"></i>
+          <h3>27°</h3>
+        </div>
+
+        <div class="day">
+          <p>Wed</p>
+          <i class="fa-solid fa-cloud-rain"></i>
+          <h3>24°</h3>
+        </div>
+
+        <div class="day">
+          <p>Thu</p>
+          <i class="fa-solid fa-cloud-sun"></i>
+          <h3>29°</h3>
+        </div>
+
+        <div class="day">
+          <p>Fri</p>
+          <i class="fa-solid fa-sun"></i>
+          <h3>31°</h3>
+        </div>
+
+        <div class="day">
+          <p>Sat</p>
+          <i class="fa-solid fa-cloud-showers-heavy"></i>
+          <h3>23°</h3>
+        </div>
+
+        <div class="day">
+          <p>Sun</p>
+          <i class="fa-solid fa-cloud"></i>
+          <h3>26°</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>

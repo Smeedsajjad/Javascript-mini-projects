@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#2193b0,#6dd5ed);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+}
+
+.container{
+
+    width:100%;
+    max-width:900px;
+}
+
+h1{
+
+    color:#fff;
+
+    text-align:center;
+
+    margin-bottom:25px;
+}
+
+.search-box{
+
+    display:flex;
+
+    background:white;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    padding:18px;
+
+    font-size:18px;
+}
+
+.search-box button{
+
+    width:70px;
+
+    border:none;
+
+    background:#0077ff;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+.weather-card{
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:white;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.weather-card img{
+
+    width:120px;
+}
+
+.weather-card h1{
+
+    font-size:60px;
+
+    margin:10px 0;
+}
+
+.weather-card p{
+
+    font-size:22px;
+}
+
+.details{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+}
+
+.details div{
+
+    background:rgba(255,255,255,.2);
+
+    padding:20px;
+
+    width:150px;
+
+    border-radius:15px;
+}
+
+.details i{
+
+    font-size:28px;
+
+    margin-bottom:10px;
+}
+
+.details span{
+
+    font-size:22px;
+
+    font-weight:600;
+}
+
+.forecast-title{
+
+    color:white;
+
+    margin:35px 0 20px;
+}
+
+.forecast{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+
+    gap:15px;
+}
+
+.day{
+
+    background:rgba(255,255,255,.2);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+.day i{
+
+    font-size:35px;
+
+    margin:15px 0;
+}
+
+.day h3{
+
+    font-size:24px;
+}
+
+@media(max-width:650px){
+
+.details{
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.weather-card h1{
+
+    font-size:45px;
+}
+
+.search-box input{
+
+    font-size:16px;
+}
+
+}
